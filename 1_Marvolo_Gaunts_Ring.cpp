@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-	vector<ll> arr;
 	ll a,b,c;
 	ll n;
+	vector<ll> arr(n,0);
 	
 	cin>>n>>a>>b>>c;
 	
