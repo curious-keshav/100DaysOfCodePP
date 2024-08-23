@@ -10,7 +10,6 @@ int main()
 	vector<ll> arr(n,0);
 	
 	cin>>n>>a>>b>>c;
-	
 	for(int i=0;i<n;i++){
 	    cin>>arr[i];
 	}
@@ -39,6 +38,7 @@ int main()
 	
     for(int i=1;i<n-1;i++){
         result = max(result,prefArr[i-1]+b*arr[i]+suffArr[i+1]);
+        result = max(result,prefArr[i]+b*arr[i]+suffArr[i]);
     }
 	cout<<result<<endl;
 
